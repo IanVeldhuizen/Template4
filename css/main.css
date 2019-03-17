@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin:  0;
+    padding: 0;
+}
+
+body {
+    background-color: #2a2b2c;
+    font-family: 'Oxygen Mono', monospace;
+}
+
+h1,
+h2 {
+    letter-spacing: 2px;
+}
+/* ===== MAIN CONTAINING ELEMENTS ===== */
+#header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    height: 135px;
+    width: 100%;
+    border-bottom: 2px solid #fabc41;
+    background-color: #2a2b2c;
+}
+
+#logo {
+    /* border: 1px solid greenyellow; */
+    width: 130px;
+    margin-left: 25px;
+    margin-top: 36px;
+}
+
+#logo img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* ----------NAVIGATION----------- */
+
+ .navbar {
+    display: flex;
+    padding: 4px 8px;
+     /* border: 1px solid green;  */
+}
+
+.topnav {
+    display: flex;
+}
+
+.nav-link {
+    display: flex;
+    /* border: 1px solid aqua; */
+    margin: 0 5px;
+}
+
+.nav-link a {
+    color: #fabc41;
+    padding-right: 12px;
+    text-decoration: none; 
+    /* border: 1px solid red; */
+    align-self: flex-end;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 21px;
+}
+
+.nav-link a:hover {
+    color: #f3f3f3;
+}
+
+.nav-link-toggle {
+    display: none;
+} 
+
+
+
+/* ------------------INTRO--------------------- */
+
+#intro {
+    display: flex;
+    justify-content: space-between;
+    height: 380px;
+    margin-top: 135px;
+    width: 100%;
+    background-color: #000000;
+}
+
+#intro img { 
+   height: 380px;
+   /* border: 1px solid white; */
+}
+
+#intro-text {
+    /* border: 1px solid aqua; */
+    width: 100%;
+    /* text-align: center; */
+}
+
+#intro-text h1 {
+    color: #fabc41;
+    margin-left: -60px;
+    padding-right: 20px;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    /* border: 1px solid red; */
+}
+
+#intro-text h2 {
+    color: #fabc41;
+    font-size: 14px;
+    margin-left: -40px;
+    padding-top: 20px;
+    padding-right: 15px;
+}
+
+#main-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* background-color: #b4b4b4; */
+    padding: 8px;
+}
+
+#main-container h2 {
+    font-size: 32px;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    color: #f3f3f3;
+    padding: 15px 0;
+
+}
+
+#main-container p{
+    font-size: 13px;
+    color: #b4b4b4;
+    padding-left: 12px;
+}
+
+
+
+
+/* -----------------MEDIA QUERIES---------------- */
+
+@media (max-width: 768px) {
+    .topnav,
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar {
+        justify-content: center;
+        
+    }
+
+    .fas {
+        font-size: 26px;
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    .navbar__ToggleShow {
+        display: flex;
+    }
+
+    .nav-link-toggle {
+        display: initial;
+        cursor: pointer;
+        color: #fabc41;
+    }
+
+    .nav-link {
+        margin: 0 10px;
+    }
+
+    
+
+}
+
+@media (min-width: 768px){
+
+    .section-left {
+        width: 50%;
+        border-top: 1px solid #fabc41;
+        border-left: 1px solid #fabc41;
+        padding-left: 8px;
+
+    }
+    
+    .section-right {
+        width: 50%;
+    }
+}
